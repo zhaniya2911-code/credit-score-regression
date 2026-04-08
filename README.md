@@ -21,6 +21,16 @@ I developed and compared three Linear Regression models:
 2. **Extended Model:** Adding behavioral data (delayed payments, payment history).
 3. **Transformed Model (Final):** Utilizing log-transformations to handle skewed distributions and improve model fit.
 
+### Model statistics & key findings
+I performed a multiple linear regression to identify the most significant drivers of credit scores. 
+![Model Summary](./summary.png)
+
+**Key observations from the regression analysis:**
+* **Income & Debt (Log Transformed):** Both variables showed high statistical significance ($p < 0.001$), confirming that normalized financial metrics are strong predictors.
+* **Credit Mix:** Customers with a "Good" credit mix showed a significant positive estimate ($0.2779$), indicating a strong correlation with higher credit scores.
+* **Payment Behavior:** The model successfully captured that not paying the minimum amount significantly impacts the score (Estimate: $-0.0938$).
+* **Model Reliability:** Most variables achieved a $p$-value of $0.0000$, validating the strength of the selected features.
+
 ## Visualizations
 *(Below are the insights generated from the R script)*
 
